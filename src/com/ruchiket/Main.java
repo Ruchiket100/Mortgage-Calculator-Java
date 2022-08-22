@@ -13,10 +13,10 @@ public class Main {
         int principalAmount = scanner.nextInt();
         // input for Interest Rate
         System.out.print("Enter Interest Rate on Principal Amount : ");
-        double interestRate = scanner.nextDouble()/1200;
+        double interestRate = scanner.nextDouble()/1200; // for 1 month
         // input for Period
         System.out.print("Enter Period in years : ");
-        int period = scanner.nextByte() * 12;
+        int period = scanner.nextByte() * 12; // in months
 
     // find Mortgage
         double mortgage = principalAmount*(interestRate*Math.pow((1 + interestRate), period)/(Math.pow((1 + interestRate),period) - 1));
