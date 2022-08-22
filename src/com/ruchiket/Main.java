@@ -14,12 +14,12 @@ public class Main {
         System.out.print("Enter Principal Amount : ");
         int principalAmount = scanner.nextInt();
 
-        // input for Interest Rate
+        // input for Annual Interest Rate
         System.out.print("Enter Interest Rate on Principal Amount : ");
-        float annualInterestRate = scanner.nextFloat(); // for 1 month
+        float annualInterestRate = scanner.nextFloat();
         float monthlyInterest = annualInterestRate / PERCENT /MONTHS;
 
-        // input for Period
+        // input for Period (years)
         System.out.print("Enter Period in years : ");
         byte period = scanner.nextByte() ;
         int noOfMonths = period * MONTHS;
