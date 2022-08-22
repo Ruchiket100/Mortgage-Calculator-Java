@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
     // get PrincipalAmount, Interest Rate, Period(years)
         Scanner scanner = new Scanner(System.in);
         // input for Principal Amount\
@@ -16,8 +17,11 @@ public class Main {
         // input for Period
         System.out.print("Enter Period in years : ");
         int period = scanner.nextByte() * 12;
+
     // find Mortgage
         double mortgage = principalAmount*(interestRate*Math.pow((1 + interestRate), period)/(Math.pow((1 + interestRate),period) - 1));
+
+    // show Mortgage
         System.out.println("Mortgage : " + Math.floor(mortgage));
     }
 }
